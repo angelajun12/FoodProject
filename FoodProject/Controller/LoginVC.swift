@@ -24,8 +24,17 @@ class LoginVC: UIViewController {
     }
     
     @IBAction func Login(_ sender: UIButton) {
-        Auth.auth().signIn(withEmail: Email.text!, password: Password.text!, completion: <#T##AuthDataResultCallback?##AuthDataResultCallback?##(AuthDataResult?, Error?) -> Void#>)
-        self.performSegue(withIdentifier: "toHomeVC", sender: self)
+        Auth.auth().signIn(withEmail: Email.text!, password: Password.text!) { (user, error) in
+            if error != nil {
+                print(error!)
+            } else {
+                print("Registration Successful!")
+                
+           self.performSegue(withIdentifier: "toHomeVC", sender: self)
+            }
+        
+        }
+
     }
     
     /*
