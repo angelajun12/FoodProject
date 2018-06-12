@@ -297,10 +297,10 @@
             </objects>
             <point key="canvasLocation" x="-3903.1999999999998" y="-1676.311844077961"/>
         </scene>
-        <!--WelcomeVC-->
+        <!--View Controller-->
         <scene sceneID="ZTj-Wu-z0m">
             <objects>
-                <viewController id="WNf-bJ-HSk" customClass="WelcomeVC" customModule="FoodProject" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="WNf-bJ-HSk" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="BPS-rp-K4i">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
