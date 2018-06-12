@@ -73,7 +73,6 @@
                                 <state key="normal" title="Login"/>
                                 <connections>
                                     <action selector="Login:" destination="0oQ-e5-Pi9" eventType="touchUpInside" id="Pua-nP-tWd"/>
-                                    <segue destination="6mt-fh-8cx" kind="show" identifier="toHomeVC" id="WrG-nB-PWM"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kVe-hz-I00">
@@ -105,6 +104,7 @@
                     <connections>
                         <outlet property="Email" destination="kVe-hz-I00" id="Fb9-Bh-hcz"/>
                         <outlet property="Password" destination="m9D-3Z-XBi" id="iIV-Uq-HyI"/>
+                        <segue destination="6mt-fh-8cx" kind="show" identifier="toHomeVC" id="cRw-rL-r9N"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NLX-w0-dIP" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -290,6 +290,7 @@
                     <connections>
                         <outlet property="Email" destination="R0F-YF-Ue5" id="BTg-kb-Cbd"/>
                         <outlet property="Password" destination="sKz-P7-mfY" id="hYX-kY-kip"/>
+                        <segue destination="6mt-fh-8cx" kind="show" identifier="toHomeVC" id="d0e-Ma-sPk"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8uI-CV-0N2" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -369,4 +370,7 @@
         <image name="mcgon" width="485" height="291"/>
         <image name="snape" width="512" height="384"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="cRw-rL-r9N"/>
+    </inferredMetricsTieBreakers>
 </document>

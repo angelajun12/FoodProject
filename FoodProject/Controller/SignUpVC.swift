@@ -24,7 +24,15 @@ class SignUpVC: UIViewController {
     }
     
     @IBAction func SignUpPressed(_ sender: Any) {
-    Auth.auth().createUser(withEmail: Email.text!, password: Password.text!, completion: <#T##AuthDataResultCallback?##AuthDataResultCallback?##(AuthDataResult?, Error?) -> Void#>)
+        Auth.auth().createUser(withEmail: Email.text!, password: Password.text!) { (user, error) in
+            if error != nil {
+                print(error!)
+            } else {
+                print("Registration Successful!")
+            
+                self.performSegue(withIdentifier: "toHomeVC", sender: self)
+            }
+        }
     
     }
     
